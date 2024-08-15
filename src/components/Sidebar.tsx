@@ -52,7 +52,7 @@ const Sidebar = (props: {
 
       // if the user has scrolled to the bottom of the container load more customers.
       if (
-        container.scrollHeight - container.scrollTop ===
+        container.scrollHeight - container.scrollTop <=
         container.clientHeight
       ) {
         loadMoreCustomers();
